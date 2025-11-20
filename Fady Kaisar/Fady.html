@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEM High School for Boys - 6th of October</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f7fa;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+        
+        header {
+            background: #1e8acb;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .logo-container img {
+            height: 120px;
+        }
+        
+        .school-title h1 {
+            color: white;
+            font-size: 1.8rem;
+            margin-bottom: 5px;
+        }
+        
+        .page {
+            display: none;
+        }
+        
+        .page.active {
+            display: block;
+        }
+        
+        .nav-button {
+            display: inline-block;
+            background: #1a4b8c;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            color: #1a4b8c;
+            margin: 30px 0 15px;
+            border-bottom: 2px solid #e63946;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            color: #1a4b8c;
+            margin: 20px 0 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+        }
+        
+        .mission-vision {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .mission, .vision {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .video-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .alumni-logos {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .alumni-logo {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .teams-clubs {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .teams, .clubs {
+            flex: 1;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .building-container, .residence-container, .labs-container, .community-section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .labs-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .labs-gallery img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        
+        .navigation {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .school-title a:hover {
+            color: #ffd700; /* أصفر جذاب */
+            transform: scale(1.05);
+        }
+
+        .school-title a {
+            text-align: center;
+            color: #131012;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: all 0.2s ease-in-out;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+            }
+            
+            .mission-vision, .teams-clubs {
+                flex-direction: column;
+            }
+            
+            .alumni-logos {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .labs-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo-container">
+                <img src="STEM Vector.svg" alt="STEM Egypt Logo"/>
+            </div>
+            <div class="school-title">
+                <h1>STEM High School for Boys</h1>
+                <p>6th of October City</p>
+                <a href="/Project-work.html/index.html">Home</a>   |
+                <a href="/Project-work.html/About.html">About</a>
+            </div>
+            <div class="logo-container">
+                <img src="Nile_University_logo.png" alt="NU Logo"/>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="page1" class="page active">
+            <a href="#" class="nav-button" onclick="showPage('page1')">Return to Home</a>
+            
+            <div class="mission-vision">
+                <div class="mission">
+                    <h1>The Mission of the School</h1>
+                    <p>Our mission is to provide an exceptional STEM education that empowers young men to become innovative problem-solvers, critical thinkers, and leaders in science and technology. We foster a culture of academic excellence, ethical responsibility, and lifelong learning.</p>
+                </div>
+                <div class="vision">
+                    <h1>The Vision of the School</h1>
+                    <p>Our vision is to be a premier institution that shapes the next generation of Egyptian scientists, engineers, and innovators who will drive technological advancement and contribute to sustainable development in Egypt and beyond.</p>
+                </div>
+            </div>
+            
+            <h1>School Video</h1>
+            <div class="video-container">
+                <video width="100%" height="auto" controls>
+                    <source src="Opo.mp4" >
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <h1>The Alumni</h1>
+            <p>Our graduates have been accepted to prestigious universities worldwide:</p>
+            <div class="alumni-logos">
+                <div class="alumni-logo">Harvard</div>
+                <div class="alumni-logo">MIT</div>
+                <div class="alumni-logo">Stanford</div>
+                <div class="alumni-logo">Nile University</div>
+                <div class="alumni-logo">Oxford</div>
+                <div class="alumni-logo">Cairo University</div>
+                <div class="alumni-logo">Ain Shams University</div>
+                <div class="alumni-logo">Alexandria University</div>
+            </div>
+            
+            <h1>Teams & Clubs</h1>
+            <div class="teams-clubs">
+                <div class="teams">
+                    <h2>The Teams</h2>
+                    <ul>
+                        <li>Robotics Team</li>
+                        <li>Science Olympiad Team</li>
+                        <li>Math Competition Team</li>
+                        <li>Programming Team</li>
+                        <li>Engineering Design Team</li>
+                        <li>Physics Olympiad Team</li>
+                    </ul>
+                </div>
+                <div class="clubs">
+                    <h2>The Clubs</h2>
+                    <ul>
+                        <li><strong>Robotics Club:</strong> Students design, build, and program robots for various competitions.</li>
+                        <li><strong>Science Club:</strong> Hands-on experiments and research projects in biology, chemistry, and physics.</li>
+                        <li><strong>Programming Club:</strong> Learning various programming languages and developing software applications.</li>
+                        <li><strong>Engineering Club:</strong> Tackling real-world engineering challenges through design projects.</li>
+                        <li><strong>Math Club:</strong> Exploring advanced mathematical concepts and preparing for competitions.</li>
+                        <li><strong>Environmental Club:</strong> Promoting sustainability and environmental awareness through projects.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="navigation">
+                <a href="#" class="nav-button" onclick="showPage('page2')">Explore Our Campus →</a>
+            </div>
+        </div>
+
+        <div id="page2" class="page">
+            <a href="#" class="nav-button" onclick="showPage('page1')">Return to Home</a>
+            
+            <div class="building-container">
+                <h1>School Building</h1>
+                <p>Our state-of-the-art school building features modern classrooms, advanced laboratories, and specialized learning spaces designed to foster innovation and collaboration. The architecture incorporates sustainable design principles and provides an optimal environment for STEM education.</p>
+                <img src="school.jpg" alt="Image of School Building" width="100%"/>
+            </div>
+            
+            <div class="residence-container">
+                <h1>Students' Residence</h1>
+                <p>The students' residence offers comfortable and secure accommodation with modern amenities. Each room is designed to provide a conducive environment for both study and relaxation, with common areas for social interaction and collaborative work.</p>
+                <img src="residence.jpg" alt="Image of Students' Residence" width="100%"/>
+            </div>
+            
+            <div class="labs-container">
+                <h1>School LABs</h1>
+                <p>Our laboratories are equipped with cutting-edge technology and equipment to support hands-on learning and research. Students have access to specialized labs for physics, chemistry, biology, robotics, electronics, and computer science.</p>
+                <div class="labs-gallery">
+                    <img src="school.jpg" alt="Physics Lab"/>
+                    <img src="chemLab.jpg" alt="Chemistry Lab"/>
+                    <img src="multiLab.jpg" alt="Media Lab"/>
+                    <img src="geoLab.jpg" alt="Geology Lab"/>
+                </div>
+            </div>
+            
+            <div class="community-section">
+                <h1>School Community</h1>
+                <div>
+                    <h2>Student Body</h2>
+                    <p>Our student body consists of highly motivated young men from diverse backgrounds who share a passion for STEM fields. With a selective admission process, we ensure a community of academically talented students who challenge and inspire each other.</p>
+                </div>
+                <div>
+                    <h2>Campus Life</h2>
+                    <p>Campus life at our school is vibrant and engaging, with a balance of academic rigor and extracurricular activities. Students participate in various clubs, competitions, and social events that foster teamwork, leadership, and personal growth. Our campus provides a supportive environment where students can explore their interests and develop lifelong friendships.</p>
+                </div>
+            </div>
+            
+            <div class="navigation">
+                <a href="#" class="nav-button" onclick="showPage('page1')">← Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>STEM High School for Boys - 6th of October | Contact: info@stem6oct.edu.eg | Phone: +20 123 456 7890</p>
+            <p>© 2023 STEM High School. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Show the selected page
+            document.getElementById(pageId).classList.add('active');
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>

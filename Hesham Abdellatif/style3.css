@@ -1,0 +1,180 @@
+/* ===========================
+   GLOBAL STYLE
+=========================== */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f4f0; /* خلفية مريحة للعين */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Titles */
+h1 {
+    text-align: center;
+    color: #020b10;
+    margin-bottom: 15px;
+    font-size: 2.8em;
+}
+
+h2 {
+    text-align: center;
+    color: #1b4f72;
+    margin-bottom: 15px;
+    font-size: 2em;
+}
+
+h3 {
+    color: #020202;
+}
+
+h4 {
+    color: #333;
+}
+
+/* ===========================
+   NAVIGATION BAR
+=========================== */
+#header {
+    background-color: #1b3a57; /* أزرق غامق */
+    padding: 18px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#header a {
+    color: #f8f4f4;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+#header a:hover {
+    color: #ffd700; /* أصفر جذاب */
+    transform: scale(1.05);
+}
+
+/* ===========================
+   SECTIONS
+=========================== */
+section {
+    background-color: #ffffff;
+    width: 85%;
+    margin: 25px auto;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
+}
+
+section:hover {
+    transform: translateY(-4px);
+}
+
+/* Paragraphs */
+section p {
+    font-size: 18px;
+    text-align: center;
+    margin: 15px auto;
+    max-width: 850px;
+    color: #000000; /* نص داكن ليكون مقروء */
+}
+
+/* Lists */
+ul, ol {
+    width: 75%;
+    margin: 15px auto;
+    padding-left: 30px;
+}
+
+li {
+    margin-bottom: 10px;
+    background-color: #e6f2ff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Images */
+section img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 12px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    border: 2px solid #1b4f72;
+}
+
+/* Links in sections */
+section a {
+    color: #1b4f72;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+section a:hover {
+    text-decoration: underline;
+    color: #2c6e49;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+#footer {
+    background-color: #0b070a; /* غامق */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    width: 85%;
+    margin: 30px auto 50px auto;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    font-weight: bold;
+}
+
+.my-button {
+    text-align: center;
+    background-color: #1b4f72;   /* Dark blue */
+    color: #fff;                 /* White text */
+    border: none;                /* Remove default border */
+    padding: 12px 25px;          /* Button size */
+    border-radius: 8px;          /* Rounded corners */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;  /* Smooth hover effect */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+section a {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
