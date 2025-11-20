@@ -1,0 +1,208 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #222;
+  line-height: 1.6;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2e2e2e;
+  color: white;
+  padding: 20px 40px;
+}
+
+.header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #fff;
+}
+
+/* remove border from nile logo */
+.nile {
+  border: none;
+}
+
+.intro {
+  text-align: center;
+  padding: 36px 20px;
+  background-color: #fff;
+  margin: 24px auto;
+  border-radius: 10px;
+  width: 85%;
+  box-shadow: 0 0 12px rgba(0,0,0,0.12);
+}
+
+.school-photo {
+  width: 80%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+.description {
+  border-left: 4px solid #3a6351;
+  padding: 18px;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  text-align: justify;
+}
+
+.contact {
+  text-align: center;
+  padding: 20px;
+  background-color: #e6f3ed;
+  margin: 20px auto;
+  border-radius: 8px;
+  width: 70%;
+  box-shadow: 0 0 8px rgba(0,0,0,0.08);
+}
+
+.link {
+  display: inline-block;
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: #3a6351;
+  font-weight: 700;
+  transition: color 0.2s, transform 0.15s;
+}
+
+.link:hover {
+  color: #558b6e;
+  transform: scale(1.02);
+}
+
+.video-section {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.video {
+  width: 80%;
+  max-width: 700px;
+  border-radius: 10px;
+  border: 2px solid #3a6351;
+  box-shadow: 0 5px 12px rgba(0,0,0,0.12);
+}
+
+.button-container {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.btn {
+  padding: 12px 22px;
+  background-color: #3a6351;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s, transform 0.12s;
+}
+
+.btn:hover {
+  background-color: #558b6e;
+  transform: scale(1.03);
+}
+
+.students {
+  text-align: center;
+  padding: 36px 20px;
+  background-color: #fff;
+  margin: 24px auto;
+  border-radius: 10px;
+  width: 85%;
+  box-shadow: 0 0 12px rgba(0,0,0,0.12);
+}
+
+/* Student grid layout */
+.student-grid {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: nowrap; /* Keep all cards in one row on large screens */
+  margin-top: 12px;
+}
+
+/* Responsive grid for smaller screens */
+@media (max-width: 1200px) {
+  .student-grid {
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  }
+}
+
+.student-card {
+  background-color: #f9f9f9;
+  padding: 14px;
+  border-radius: 10px;
+  width: 180px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.student-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.student-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+/* Student name style */
+.student-name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 8px;
+  color: #3a6351;
+}
+
+/* Student description paragraph style */
+.student-description {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 4px;
+  color: #222;
+  line-height: 1.4;
+  padding: 0 8px;
+}
+
+
+#nave {
+  text-align: center;
+  background-color: #2e2e2e;
+}
+
+
+#nave a:hover {
+    color: #ffd700; /* أصفر جذاب */
+    transform: scale(1.05);
+}
+
+#nave a {
+    text-align: center;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+}
