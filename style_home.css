@@ -1,0 +1,185 @@
+/* ===========================
+   GLOBAL STYLE
+=========================== */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f4f0; /* خلفية مريحة للعين */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Titles */
+h1 {
+    text-align: center;
+    color: #020b10;
+    margin-bottom: 15px;
+}
+
+h2 {
+    text-align: center;
+    color: #1b4f72;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #2c6e49;
+}
+
+/* ===========================
+   NAVIGATION BAR
+=========================== */
+#header {
+    background-color: #1b3a57; /* أزرق غامق */
+    padding: 18px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+#header a {
+    color: #f8f4f4;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+#header a:hover {
+    color: #ffd700; /* أصفر جذاب */
+    transform: scale(1.05);
+}
+
+/* ===========================
+   SECTIONS
+=========================== */
+section {
+    background-color: #ffffff;
+    width: 85%;
+    margin: 25px auto;
+    padding: 30px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.2s;
+}
+
+section:hover {
+    transform: translateY(-4px);
+}
+
+/* ===========================
+   PARAGRAPHS
+=========================== */
+section p {
+    font-size: 18px;
+    text-align: center;
+    margin: 15px auto;
+    max-width: 850px;
+    color: #fdfcff;
+}
+
+/* ===========================
+   LISTS
+=========================== */
+ul, ol {
+    width: 75%;
+    margin: 15px auto;
+    padding-left: 30px;
+}
+
+li {
+    margin-bottom: 10px;
+    background-color: #e6f2ff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* ===========================
+   VIDEO / IFRAME
+=========================== */
+iframe, video {
+    display: block;
+    margin: 25px auto;
+    border-radius: 12px;
+    max-width: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    border: 2px solid #1b4f72;
+}
+
+/* ===========================
+   TEAM MEMBERS (About Page)
+=========================== */
+#team h3 {
+    margin-top: 20px;
+    color: #1b4f72;
+}
+
+#team p {
+    margin-left: 10px;
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+#footer {
+    background-color: #0b070a; /* أخضر هادي */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 12px;
+    width: 85%;
+    margin: 30px auto 50px auto;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    font-weight: bold;
+}
+
+#what-is-stem p {
+    color:#1b3a57
+}
+
+#join p {
+    color:#0b070a
+}
+
+#join  a:hover {
+    color: #ffd700; /* أصفر جذاب */
+    transform: scale(1.05);
+}
+
+#join a {
+    text-align: center;
+    color: #131012;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+#join {
+    text-align: center;
+}
+
+#Schools p {
+    text-align: left;
+    color: #131012;
+}
+
+#Schools a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+#Schools a:hover {
+    color: #ffd700; /* أصفر جذاب */
+    transform: scale(1.05);
+}
