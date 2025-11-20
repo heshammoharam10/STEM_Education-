@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>STEM High School for boys - 6th of October</title>
+    <link rel="stylesheet" href="Style4.css"> 
+</head>
+
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo-container">
+                <img src="stem_egypt.png" alt="STEM Egypt Logo" width="75"/>
+            </div>
+            <div class="school-title">
+                <h1>STEM High School for boys - 6th of October</h1>
+                <p>Excellence in Science, Technology, Engineering, and Mathematics</p>
+                <a href="/Project-work.html/index.html">Home</a>   |
+                <a href="/Project-work.html/About.html">About</a>   
+            </div>
+            <div class="logo-container">
+                <img src="Nile_University_logo.png" alt="NU Logo" width="75"/>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="page1" class="page active">
+            
+            
+            <div class="mission-vision">
+                <div class="mission">
+                    <h1>The Mission of the School</h1>
+                    <p>Our mission is to provide an exceptional STEM education that empowers young men to become innovative problem-solvers, critical thinkers, and leaders in science and technology. We foster a culture of academic excellence, ethical responsibility, and lifelong learning.</p>
+                </div>
+                <div class="vision">
+                    <h1>The Vision of the School</h1>
+                    <p>Our vision is to be a premier institution that shapes the next generation of Egyptian scientists, engineers, and innovators who will drive technological advancement and contribute to sustainable development in Egypt and beyond.</p>
+                </div>
+            </div>
+            
+            <h1>School Video</h1>
+            <div class="video-container">
+                <video width="320" controls>
+                <source src="STEM October Video.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            <h1>The Alumni</h1>
+            <p>Our graduates have been accepted to prestigious universities worldwide:</p>
+            <div class="alumni-logos">
+                <div class="alumni-logo">Harvard</div>
+                <div class="alumni-logo">MIT</div>
+                <div class="alumni-logo">Stanford</div>
+                <div class="alumni-logo">Cambridge</div>
+                <div class="alumni-logo">Oxford</div>
+                <div class="alumni-logo">Cairo University</div>
+                <div class="alumni-logo">Ain Shams University</div>
+                <div class="alumni-logo">Alexandria University</div>
+            </div>
+            
+            <h1>Teams & Clubs</h1>
+            <div class="teams-clubs">
+                <div class="teams">
+                    <h2>The Teams</h2>
+                    <ul>
+                        <li>Robotics Team</li>
+                        <li>Science Olympiad Team</li>
+                        <li>Math Competition Team</li>
+                        <li>Programming Team</li>
+                        <li>Engineering Design Team</li>
+                        <li>Physics Olympiad Team</li>
+                    </ul>
+                </div>
+                <div class="clubs">
+                    <h2>The Clubs</h2>
+                    <ul>
+                        <li><strong>Robotics Club:</strong> Students design, build, and program robots for various competitions.</li>
+                        <li><strong>Science Club:</strong> Hands-on experiments and research projects in biology, chemistry, and physics.</li>
+                        <li><strong>Programming Club:</strong> Learning various programming languages and developing software applications.</li>
+                        <li><strong>Engineering Club:</strong> Tackling real-world engineering challenges through design projects.</li>
+                        <li><strong>Math Club:</strong> Exploring advanced mathematical concepts and preparing for competitions.</li>
+                        <li><strong>Environmental Club:</strong> Promoting sustainability and environmental awareness through projects.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="navigation">
+                <a href="#" class="nav-button" onclick="showPage('page2')">Explore Our Campus →</a>
+            </div>
+        </div>
+
+        <div id="page2" class="page">
+            <a href="#" class="nav-button" onclick="showPage('page1')">Return to Home</a>
+            
+            <div class="building-container">
+                <h1>School Building</h1>
+                <p>Our state-of-the-art school building features modern classrooms, advanced laboratories, and specialized learning spaces designed to foster innovation and collaboration. The architecture incorporates sustainable design principles and provides an optimal environment for STEM education.</p>
+                <img src="school.jpg" width="900"   alt="Image of School Building"/>
+            </div>
+            
+            <div class="residence-container">
+                <h1>Students' Residence</h1>
+                <p>The students' residence offers comfortable and secure accommodation with modern amenities. Each room is designed to provide a conducive environment for both study and relaxation, with common areas for social interaction and collaborative work.</p>
+                <img src="residence.jpg" width="900" alt="Image of Students' Residence"/>
+            </div>
+            
+            <div class="labs-container">
+                <h1>School LABs</h1>
+                <p>Our laboratories are equipped with cutting-edge technology and equipment to support hands-on learning and research. Students have access to specialized labs for physics, chemistry, biology, robotics, electronics, and computer science.</p>
+                <div class="labs-gallery">
+                    <img src="lab1.jpg" width="290" alt="Physics Lab"/>
+                    <img src="lab2.jpg" width="290" alt="Chemistry Lab"/>
+                    <img src="lab3.jpg" width="290" alt="Robotics Lab"/>
+                </div>
+            </div>
+            
+            <div class="community-section">
+                <h1>School Community</h1>
+                <div>
+                    <h2>Student Body</h2>
+                    <p>Our student body consists of highly motivated young men from diverse backgrounds who share a passion for STEM fields. With a selective admission process, we ensure a community of academically talented students who challenge and inspire each other.</p>
+                </div>
+                <div>
+                    <h2>Campus Life</h2>
+                    <p>Campus life at our school is vibrant and engaging, with a balance of academic rigor and extracurricular activities. Students participate in various clubs, competitions, and social events that foster teamwork, leadership, and personal growth. Our campus provides a supportive environment where students can explore their interests and develop lifelong friendships.</p>
+                </div>
+            </div>
+            
+            <div class="navigation">
+                <a href="#" class="nav-button" onclick="showPage('page1')">← Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>STEM High School for boys - 6th of October | Contact: info@stem6oct.edu.eg | Phone: +20 123 456 7890</p>
+            <p>© 2023 STEM High School. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Show the selected page
+            document.getElementById(pageId).classList.add('active');
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+    </script>
+</html>
